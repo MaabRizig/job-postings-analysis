@@ -104,20 +104,22 @@ Power Query used to make ETL (Extract, Transform and load) as follows:
     - data_job_skills
 2. **Transform**: Then both queries are manipulated and cleaned by these following steps:
     - data_jobs_all:  
-    <br>
-    ![data_jobs_all_ transform steps](images/data_jobs_all_transform.png)
+        <br>
+        ![data_jobs_all_ transform steps](images/data_jobs_all_transform.png)  
     - data_job_skills:  
-    <br>
-    ![data_job_skills transform steps](images/data_job_skills_transform.png)
+        <br>
+        ![data_job_skills transform steps](images/data_job_skills_transform.png)  
 3. **Load**: Finally, both queries are loaded to the workbook as connection only for further analysis.
 
 ### Power Pivot:
-- **Data Modeling**: In order to create more powerful pivot tables and charts, i used Power Pivot to create a Data Model as follows:  
-<br>
-![data model](images/data_model.png)  
-data_jobs_all and data_job_skills connected by a one-to-many relationship using job_id, where job_id are a primary key in data_jobs_all, and foreign key in data_job_skills.
+- **Data Modeling**: 
+    In order to create more powerful pivot tables and charts, i used Power Pivot to create a Data Model as follows:  
+    <br>
+    ![data model](images/data_model.png)    
+    data_jobs_all and data_job_skills connected by a one-to-many relationship using job_id, where job_id are a primary key in data_jobs_all, and foreign key in data_job_skills.
 
-- **DAX**: Data Analysis Expressions(DAX) are used to create Measures for both tables. below are some Measures created using DAX:
+- **DAX**: 
+    Data Analysis Expressions(DAX) are used to create Measures for both tables. below are some Measures created using DAX:
     ```excel
     Job Count:= DISTINCTCOUNT(data_jobs_all[job_id])
     ```
@@ -137,15 +139,15 @@ data_jobs_all and data_job_skills connected by a one-to-many relationship using 
 Although a higher number of required skills generally corresponds to higher salaries, data science and analysis roles require significantly fewer skills than data engineering roles while offering similar levels of pay(ex: as in Data analysis and Cloud Engineer).
 
 ### What are the top skills needed for people in Data field?
-![Avg_Skills_Per_Job](images/Skills_Job_Country.png)  
+![Skills_Job_Country](images/Skills_Job_Country.png)  
 As we can see, SQL and Python are the most high-demand skills needed across all Data jobs.  
 
 ### what is the pay for the top skills needed in Data field?
-![Avg_Skills_Per_Job](images/Skill_Salary.png)  
+![Skill_Salary](images/Skill_Salary.png)  
 For Data Analysis jobs, learning high-demand skills like Python and SQL, are tied to higher Salary.
 
 ### Which jobs are most suitable for remote work?
-![Avg_Skills_Per_Job](images/Remote_Analysis.png)  
+![Remote_Analysis](images/Remote_Analysis.png)  
 
 
 

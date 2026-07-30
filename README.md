@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Using a dataset of data science job postings from 2023, collected and compiled by Luke Barousse from different job posting platforms, I created the interactive salary dashboard shown below.
+Using a dataset of data science job postings from 2023, collected by Luke Barousse from different job posting platforms, I created an interactive [salary dashboard](#data-science-salary-dashboard) and performed [Exploratory Data Analysis (EDA)](#exploratory-data-analysiseda) on the dataset.
 
 
 ## Data Science Salary Dashboard
